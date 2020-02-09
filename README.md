@@ -91,7 +91,7 @@ return new Docket(DocumentationType.SWAGGER_2)
 #### 7. 配置API分组 
 ##### 7.1 配置API文档分组
 ` return new Docket(DocumentationType.SWAGGER_2).groupName("A");`
-##### 7.3 配置多个分组
+##### 7.2 配置多个分组
 ```
  @Bean
     public Docket docket1(){
@@ -106,7 +106,7 @@ return new Docket(DocumentationType.SWAGGER_2)
         return new Docket(DocumentationType.SWAGGER_2).groupName("C");
     }
 ```
-##### 7.4 实体类配置
+##### 7.3 实体类配置
 > *controller返回值中存在实体类，就会被扫描到*
 > 给生成的文档加注释
 >> @ApiModule()-->实体类
