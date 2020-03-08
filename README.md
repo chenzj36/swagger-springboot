@@ -58,7 +58,7 @@ public class SwaggerConfig {
 }
 ```
 - 效果    
-![enter description here](http://q5053ip41.bkt.clouddn.com/xsj/1581156660557.png)    
+![enter description here](https://aliyunosschenzj.oss-cn-beijing.aliyuncs.com/aliyunoss/1581156660557.png)    
 ##### 6.2 配置扫描接口
 - Docket.select()
 ```
@@ -87,11 +87,11 @@ return new Docket(DocumentationType.SWAGGER_2)
                 .enable(false)
 ```
 - 题目：要求仅在生产环境启用swagger     
- ![enter description here](http://q5053ip41.bkt.clouddn.com/xsj/1581168294356.png)
+ ![enter description here](https://aliyunosschenzj.oss-cn-beijing.aliyuncs.com/aliyunoss/1581168294356.png)
 #### 7. 配置API分组 
 ##### 7.1 配置API文档分组
 ` return new Docket(DocumentationType.SWAGGER_2).groupName("A");`
-##### 7.2 配置多个分组
+##### 7.3 配置多个分组
 ```
  @Bean
     public Docket docket1(){
@@ -106,7 +106,7 @@ return new Docket(DocumentationType.SWAGGER_2)
         return new Docket(DocumentationType.SWAGGER_2).groupName("C");
     }
 ```
-##### 7.3 实体类配置
+##### 7.4 实体类配置
 > *controller返回值中存在实体类，就会被扫描到*
 > 给生成的文档加注释
 >> @ApiModule()-->实体类
